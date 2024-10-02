@@ -1,5 +1,5 @@
 # Meta-DEG
 
-![image](https://github.com/user-attachments/assets/d2006094-5930-4d9a-a5eb-a8f54389e12d)
+![image](https://github.com/user-attachments/assets/62b2a782-4c63-4c3a-b7a7-92dc312c3347)
 
 
