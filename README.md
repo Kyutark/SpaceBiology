@@ -1,4 +1,4 @@
 # CSBL_internship
 
-![image](https://github.com/user-attachments/assets/61f225c4-a6e4-400f-98b8-24c8e7eecc9a)
+![image](https://github.com/user-attachments/assets/c39d71b6-6217-417c-9298-911e21b295d2)
 
