@@ -3,7 +3,7 @@
 
 
 ```
-📦 [directory]
+📦 [Pipeline_directory]
 ├─ mdsh.xlsx
 ├─ Snakefile
 └─ Scripts
