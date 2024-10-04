@@ -13,7 +13,8 @@
    └─ deg_anaylis.R
 ```
 
-![image](https://github.com/user-attachments/assets/ae2ff50f-aaaa-427a-afde-e5ea6533cd0a)
+![image](https://github.com/user-attachments/assets/626eae37-6564-4109-bebf-9ae497d3a06d)
+
 
 
 
