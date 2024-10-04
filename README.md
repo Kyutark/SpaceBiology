@@ -3,7 +3,7 @@
 
 
 ```
-📦 [directroy]
+📦 [directory]
 ├─ mdsh.xlsx
 ├─ Snakefile
 └─ Scripts
