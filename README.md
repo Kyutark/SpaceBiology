@@ -6,7 +6,7 @@
 📦 [directroy]
 ├─ mdsh.xlsx
 ├─ Snakefile
-├─ Scripts
+└─ Scripts
    ├─ relabel_counts.py
    ├─ extract_gene_ids.py
    ├─ metatranscriptomics.py
