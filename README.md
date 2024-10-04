@@ -12,8 +12,10 @@
    ├─ metatranscriptomics.py
    └─ deg_anaylis.R
 ```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/626eae37-6564-4109-bebf-9ae497d3a06d">
+</p>
 
-![image](https://github.com/user-attachments/assets/626eae37-6564-4109-bebf-9ae497d3a06d)
 
 
 
