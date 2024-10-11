@@ -6,6 +6,6 @@
 
 CONTENTS
 ---
-1. PIPELINE : for meta-transcriptome analysis is available in here[Spacebiology/pipeline]
+1. PIPELINE : for meta-transcriptome analysis is available in [pipeline]
 2. Python Package : "metaDEG" is described in 
 3. Web-Database
