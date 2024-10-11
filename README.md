@@ -6,6 +6,6 @@
 
 CONTENTS
 ---
-1. Pipeline
-2. Python Package
+1. PIPELINE : for meta-transcriptome analysis
+2. Python Package : "metaDEG" is described in 
 3. Web-Database
