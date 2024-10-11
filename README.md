@@ -1,7 +1,7 @@
 # <div align="center"> 🚀🦠 SpaceBio : meta-Transcriptomics in Microgravity </div>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f76844c8-8980-48fd-af99-0f6e9576fe22" width="100%">
+  <img src="https://github.com/user-attachments/assets/7215a956-7267-45a6-bfc4-8ce26e540364" width="100%">
 </p>
 
 
