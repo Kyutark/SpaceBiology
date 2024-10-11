@@ -1,7 +1,7 @@
 # SPACEBIOLOGY
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1520fce9-5b64-49ef-a630-b39a0a046dbc" width="100%">
+  <img src="https://github.com/user-attachments/assets/f76844c8-8980-48fd-af99-0f6e9576fe22" width="100%">
 </p>
 
 CONTENTS
