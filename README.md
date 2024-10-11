@@ -1,4 +1,4 @@
-# <div align="center"> SpaceBio : Transcriptomic Analysis in Microgravity </div>
+# <div align="center"> SpaceBio : meta-Transcriptomics in Microgravity </div>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f76844c8-8980-48fd-af99-0f6e9576fe22" width="100%">
