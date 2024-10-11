@@ -6,6 +6,6 @@
 
 CONTENTS
 ---
-#### 1. PIPELINE for meta-transcriptomics : [pipeline](https://github.com/Kyutark/SpaceBiology/tree/main/Pipeline)
+#### 1. PIPELINE for meta-transcriptomics : [Pipeline](https://github.com/Kyutark/SpaceBiology/tree/main/Pipeline)
 #### 2. Python Package "metaDEG" : [pyPackage](https://github.com/Kyutark/SpaceBiology/tree/main/pyPackage)
 #### 3. Web-Database
