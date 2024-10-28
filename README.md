@@ -9,5 +9,5 @@
 ## <div align="center"> CONTENTS </div>
 
 #### 1. PIPELINE for pan-transcriptomics : [Pipeline](https://github.com/Kyutark/SpaceBiology/tree/main/Pipeline)
-#### 2. [TBA] Python Package "PAN-DEG" : [pyPackage](https://github.com/Kyutark/SpaceBiology/tree/main/pyPackage)
-#### 3. [TBA] Database "SpaceBio" :
+#### 2. Python Package "PAN-DEG" (TBA) : [pyPackage](https://github.com/Kyutark/SpaceBiology/tree/main/pyPackage)
+#### 3. Database "SpaceBio" (TBA) :
