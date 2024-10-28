@@ -1,19 +1,21 @@
-# pan-transcriptomics : from SRA to genegroup
+# 1.Pipeline: pan-transcriptomics
 ## adpatation to Microbial RNA-seq in Microgravity
+### from SRA to DEGG
 
 ---
+## 1.1. Scripts for Pan-transcriptomic Analysis
 ```
-📝 [scripts for pan-transcriptomic analysis]
-├─
-├─
-└─
+📝 [scripts]
+├─ categorizing_GO.py
+├─ drawing_heatmap.py
+├─ finding_DEG.R
+├─ identifying_valid_DEGG.py
+└─ relabelling_with_DEGG.py
 ```
 
-
-
-
+## 1.2. Pipeline for Building a Python-package (TBA)
 ```
-📦 [directory of Pipeline "metaDEG"]
+📦 [directory of Pipeline "PAN-DEG"]
 ├─ mdsh.xlsx
 ├─ Snakefile
 └─ Scripts
