@@ -1,5 +1,15 @@
-# metaDEG : from SRA to genegroup
+# pan-transcriptomics : from SRA to genegroup
 ## adpatation to Microbial RNA-seq in Microgravity
+
+---
+```
+📝 [scripts for pan-transcriptomic analysis]
+├─
+├─
+└─
+```
+
+
 
 
 ```
