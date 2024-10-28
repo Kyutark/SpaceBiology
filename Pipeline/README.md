@@ -1,8 +1,5 @@
-# 1.Pipeline: pan-transcriptomics
-## adpatation to Microbial RNA-seq in Microgravity
-### from SRA to DEGG
+# 1.Pipeline: pan-transcriptomic analysis for Microbial RNA-seq in Microgravity
 
----
 ## 1.1. Scripts for Pan-transcriptomic Analysis
 ```
 📝 [scripts]
