@@ -11,6 +11,12 @@
 ```
 
 ## 1.2. Pipeline for Python-Package "PAN-DEG" (TBA)
+
+### Pipeline-flow
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1a7bcdf7-81b5-4532-a078-8e66ab2b07b4" width="90%">
+</p>
+
 ```
 📦 [Pan-DEG]
 ├─ mdsh.xlsx
@@ -21,10 +27,3 @@
    ├─ metatranscriptomics.py
    └─ deg_anaylis.R
 ```
-
-### Pipeline-flow
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/1a7bcdf7-81b5-4532-a078-8e66ab2b07b4" width="80%">
-</p>
-
-
