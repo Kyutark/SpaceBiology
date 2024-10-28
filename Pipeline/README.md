@@ -1,4 +1,4 @@
-# 1.Pipeline: Pan-transcriptomics
+# 1. Pipeline: Pan-transcriptomics
 ## 1.1. Scripts for Analysis
 ```
 📝 [scripts]
