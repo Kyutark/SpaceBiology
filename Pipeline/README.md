@@ -1,5 +1,5 @@
 # 1. Pipeline: Pan-transcriptomics
-## 1.1. Scripts for Analysis
+** 1.1. Scripts for Analysis **
 ```
 📝 [scripts]
 ├─ categorizing_GO.py
