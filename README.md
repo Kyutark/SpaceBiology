@@ -8,6 +8,6 @@
 
 ## <div align="center"> CONTENTS </div>
 
-#### 1. PIPELINE for meta-transcriptomics : [Pipeline](https://github.com/Kyutark/SpaceBiology/tree/main/Pipeline)
-#### 2. [TBA] Python Package "metaDEG" : [pyPackage](https://github.com/Kyutark/SpaceBiology/tree/main/pyPackage)
+#### 1. PIPELINE for pan-transcriptomics : [Pipeline](https://github.com/Kyutark/SpaceBiology/tree/main/Pipeline)
+#### 2. [TBA] Python Package "PAN-DEG" : [pyPackage](https://github.com/Kyutark/SpaceBiology/tree/main/pyPackage)
 #### 3. [TBA] Database "SpaceBio" :
