@@ -1,5 +1,5 @@
 # 1. Pipeline: Pan-transcriptomics
-__1.1. Scripts for Analysis__
+## 1.1. Scripts for Analysis
 ```
 📝 [scripts]
 ├─ categorizing_GO.py
@@ -9,7 +9,7 @@ __1.1. Scripts for Analysis__
 └─ relabelling_with_DEGG.py
 ```
 
-___1.2. Pipeline for Python-package (TBA)__
+## 1.2. Pipeline for Python-package (TBA)
 
 ### Pipeline-flow
 <p align="center">
