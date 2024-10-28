@@ -1,4 +1,4 @@
-# 1.Pipeline: pan-transcriptomic analysis for Microbial RNA-seq in Microgravity
+# 1.Pipeline: Pan-transcriptomics for Microbial RNA-seq in Microgravity
 
 ## 1.1. Scripts for Pan-transcriptomic Analysis
 ```
