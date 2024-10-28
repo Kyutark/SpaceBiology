@@ -1,6 +1,6 @@
 # 1.Pipeline: Pan-transcriptomics for Microbial RNA-seq in Microgravity
 
-## 1.1. Scripts for Pan-transcriptomic Analysis
+## 1.1. Scripts for Analysis
 ```
 📝 [scripts]
 ├─ categorizing_GO.py
@@ -10,9 +10,9 @@
 └─ relabelling_with_DEGG.py
 ```
 
-## 1.2. Pipeline for Building a Python-package (TBA)
+## 1.2. Pipeline for Python-Package "PAN-DEG" (TBA)
 ```
-📦 [directory of Pipeline "PAN-DEG"]
+📦 [Pan-DEG]
 ├─ mdsh.xlsx
 ├─ Snakefile
 └─ Scripts
