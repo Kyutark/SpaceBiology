@@ -10,7 +10,7 @@
 └─ relabelling_with_DEGG.py
 ```
 
-## 1.2. Pipeline for Python-Package "PAN-DEG" (TBA)
+## 1.2. Pipeline for Python-package "PAN-DEG" (TBA)
 
 ### Pipeline-flow
 <p align="center">
