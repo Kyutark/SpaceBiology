@@ -2,7 +2,7 @@
 
 ```
 📦 [Pan-DEG]
-├─ <font color='dodgerblue'> data </font>
+├─ 📂 data
 ├─ Snakefile
 └─ Scripts
    ├─ relabel_counts.py
@@ -10,8 +10,6 @@
    ├─ metatranscriptomics.py
    └─ deg_anaylis.R
 ```
-
-<font color='dodgerblue'> 예쁜 파랑 </font>
 
 ### Pipeline-flow
 <p align="center">
