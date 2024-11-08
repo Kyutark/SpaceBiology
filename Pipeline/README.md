@@ -2,7 +2,7 @@
 
 ```
 📦 [Pan-DEG]
-├─ <span style="color:red">data</span>
+├─ ${\textsf{\color{blue}data}}$
 ├─ Snakefile
 └─ Scripts
    ├─ relabel_counts.py
