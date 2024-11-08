@@ -1,6 +1,6 @@
 # 1. Pipeline: DEG analysis of Pan-transcriptomics
 
-```linux
+```ruby
 📂 [Pan-DEG]
 ├─ data
 |  ├─ mdsh.csv
