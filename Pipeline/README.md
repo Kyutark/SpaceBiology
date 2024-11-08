@@ -1,14 +1,20 @@
 # 1. Pipeline: DEG analysis of Pan-transcriptomics
 
 ```python3
-📦 [Pan-DEG]
-├─ 📂 data
-├─ Snakefile
-└─ Scripts
-   ├─ relabel_counts.py
-   ├─ extract_gene_ids.py
-   ├─ metatranscriptomics.py
-   └─ deg_anaylis.R
+📂 [Pan-DEG]
+├─ data
+|  ├─ mdsh.csv
+|  ├─ experiment_sample_A.fastq
+|  ├─ experiment_sample_B_1.fastq
+|  └─ experiment_sample_B_2.fastq
+├─ results
+├─ modules
+|  ├─ dataset_download.py
+|  ├─ rna_seq_processing.py
+|  ├─ gene_clustering.py
+|  ├─ relabelling.py
+|  └─ deg_analysis.py
+└─ main.pipeline.py
 ```
 
 ### Pipeline-flow
