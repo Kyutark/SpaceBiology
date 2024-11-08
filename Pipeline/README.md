@@ -1,6 +1,6 @@
 # Pipeline: DEG analysis of Pan-transcriptomics
 
-``
+```
 🗃️ [Pan-DEG]
 ├─ 📂 data
 |  ├─ mdsh.csv
@@ -15,7 +15,7 @@
 |  ├─ relabelling.py
 |  └─ deg_analysis.py
 └─ main.pipeline.py
-``
+```
 
 ### Pipeline-flow
 <p align="center">
