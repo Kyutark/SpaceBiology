@@ -1,0 +1,13 @@
+experiment,organism,ref,run,condition
+PRJNA613653,Escherichia coli Nissle 1917,GCF_000714595.1,SRR11357510,micro
+PRJNA613653,Escherichia coli Nissle 1917,GCF_000714595.1,SRR11357511,micro
+PRJNA613653,Escherichia coli Nissle 1917,GCF_000714595.1,SRR11357514,normal
+PRJNA613653,Escherichia coli Nissle 1917,GCF_000714595.1,SRR11357515,normal
+PRJNA1073862,Paraburkholderia phymatum STM815,GCA_000020045.1,SRR27886265,normal
+PRJNA1073862,Paraburkholderia phymatum STM815,GCA_000020045.1,SRR27886266,normal
+PRJNA1073862,Paraburkholderia phymatum STM815,GCA_000020045.1,SRR27886268,micro
+PRJNA1073862,Paraburkholderia phymatum STM815,GCA_000020045.1,SRR27886269,micro
+csbl_entero,enterobacter,GCF_000025565.1,entsample3,micro
+csbl_entero,enterobacter,GCF_000025565.1,entsample4,micro
+csbl_entero,enterobacter,GCF_000025565.1,entsample1,normal
+csbl_entero,enterobacter,GCF_000025565.1,entsample2,normal
