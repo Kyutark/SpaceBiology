@@ -2,7 +2,7 @@
 
 ```
 📦 [Pan-DEG]
-├─ 📂_data_
+├─ 📂 **data**
 ├─ Snakefile
 └─ Scripts
    ├─ relabel_counts.py
