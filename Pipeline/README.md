@@ -1,14 +1,14 @@
 # Pipeline: DEG analysis of Pan-transcriptomics
 
 ```
-📂 [Pan-DEG]
-├─ data
+🗃️ [Pan-DEG]
+├─ 📂 data
 |  ├─ mdsh.csv
 |  ├─ experiment_sample_A.fastq
 |  ├─ experiment_sample_B_1.fastq
 |  └─ experiment_sample_B_2.fastq
-├─ results
-├─ modules
+├─ 📂 results
+├─ 📂 modules
 |  ├─ dataset_download.py
 |  ├─ rna_seq_processing.py
 |  ├─ gene_clustering.py
