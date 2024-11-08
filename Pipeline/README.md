@@ -14,7 +14,7 @@
 |  ├─ gene_clustering.py
 |  ├─ relabelling.py
 |  └─ deg_analysis.py
-└─ main.pipeline.py
+└─ main_pipeline.py
 ```
 
 ### Pipeline-flow
