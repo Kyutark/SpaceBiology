@@ -1,6 +1,6 @@
 # 1. Pipeline: DEG analysis of Pan-transcriptomics
 
-```ruby
+```python
 📦 [Pan-DEG]
 ├─ 📂 data
 ├─ Snakefile
