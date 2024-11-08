@@ -1,4 +1,4 @@
-# Pipeline: DEG analysis of Pan-transcriptomics
+# Pipeline: DEG Analysis in Pan-transcriptomics
 
 ```
 🗃️ [Pan-DEG]
