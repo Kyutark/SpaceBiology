@@ -11,8 +11,10 @@
 ├─ 📂 modules
 |  ├─ dataset_download.py
 |  ├─ rna_seq_processing.py
+|  ├─ converting_cunts.py
+|  ├─ cds_download.py
 |  ├─ gene_clustering.py
-|  ├─ relabelling.py
+|  ├─ re_labelling.py
 |  └─ deg_analysis.py
 └─ main_pipeline.py
 ```
