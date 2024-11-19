@@ -11,7 +11,7 @@
 ├─ 📂 modules
 |  ├─ dataset_download.py
 |  ├─ rna_seq_processing.py
-|  ├─ converting_cunts.py
+|  ├─ converting_counts.py
 |  ├─ cds_download.py
 |  ├─ gene_clustering.py
 |  ├─ re_labelling.py
