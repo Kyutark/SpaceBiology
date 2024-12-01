@@ -9,18 +9,19 @@
 |  └─ experiment_sample_B_2.fastq
 ├─ 📂 results
 ├─ 📂 modules
-|  ├─ dataset_download.py
-|  ├─ rna_seq_processing.py
-|  ├─ converting_counts.py
-|  ├─ cds_download.py
-|  ├─ gene_clustering.py
-|  ├─ re_labelling.py
-|  └─ deg_analysis.py
+|  ├─ dataset_downloader.py
+|  ├─ rna_seq_processor.py
+|  ├─ cds_downloader.py
+|  ├─ genecount_modifier.py
+|  ├─ gene_clusterer.py
+|  └─ deg_analyzer.py
 └─ main_pipeline.py
 ```
 
+         
+
+
 ### Pipeline-flow
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/17b5bbaa-497a-4441-9227-cbed91ddb9dc" width="100%">
+  <img src="https://github.com/user-attachments/assets/e758cd0d-2500-4e0a-8c47-1f154d9b8339" width="100%">
 </p>
-
