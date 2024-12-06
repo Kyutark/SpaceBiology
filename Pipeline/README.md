@@ -12,8 +12,8 @@
 |  ├─ dataset_downloader.py
 |  ├─ rna_seq_processor.py
 |  ├─ cds_downloader.py
-|  ├─ genecount_modifier.py
 |  ├─ gene_clusterer.py
+|  ├─ genecount_modifier.py
 |  └─ deg_analyzer.py
 └─ main_pipeline.py
 ```
