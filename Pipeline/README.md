@@ -23,5 +23,6 @@
 
 ### Pipeline-flow
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ff49e5b9-07ad-4893-ad7f-86173591a831" width="100%">
+  <img src="https://github.com/user-attachments/assets/46381ff9-acc2-48eb-a81c-e642efeedccd" width="100%">
 </p>
+
