@@ -9,4 +9,5 @@
 ## <div align="center"> CONTENTS </div>
 
 #### 1. PIPELINE for Pan-transcriptomics : [Pipeline](https://github.com/Kyutark/SpaceBiology/tree/main/Pipeline)
-#### 2. Datasets
+#### 2. pyPanDEG
+#### 3. Database
