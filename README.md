@@ -1,4 +1,5 @@
-# <div align="center"> 🚀 pyPanDEG : Differentially Expressed Genes through Pan-transcriptomics 🦠 </div>
+# <div align="center"> 🚀 pyPanDEG 🦠 </div>
+## <div align="center"> Differentially Expressed Genes through Pan-transcriptomics </div>
 
 ## <div align="center"> CONTENTS </div>
 
