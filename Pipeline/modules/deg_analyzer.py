@@ -1,100 +1,106 @@
-import os
-import pandas as pd
 import subprocess
 import re
+from pathlib import Path
+import pandas as pd
 
-# 파일 경로 설정
-metadata_path = "../data/mdsh.csv"
-results_dir = "../results/"
-error_log_path = os.path.join(results_dir, "error_log.txt")
+# Define paths relative to the script location
+script_dir = Path(__file__).resolve().parent
+metadata_path = script_dir.parent / "data" / "mdsh.csv"
+results_dir = script_dir.parent / "results"
+error_log_path = results_dir / "error_log.txt"
 
 def sanitize_filename(name):
-    """특수문자를 제거하여 파일명으로 안전한 문자열 생성"""
-    sanitized = re.sub(r'[<>:"/\\|?*]', '_', name)  # 특수문자들을 '_'로 대체
-    return sanitized
+    """Sanitize filenames by replacing special characters with underscores."""
+    return re.sub(r'[<>:"/\\|?*]', '_', name)
 
 def load_metadata():
-    """ 메타데이터 로드 """
+    """Load metadata from the CSV file."""
     metadata = pd.read_csv(metadata_path)
     experiments = metadata['experiment'].unique()
     return metadata, experiments
 
 def prepare_experiment_files(metadata, experiment):
-    """ 실험에 따른 control과 treatment 파일 분리 """
+    """Retrieve control and treatment files for a given experiment."""
     exp_data = metadata[metadata['experiment'] == experiment]
 
-    # 각 조건별 run 추출
+    # Extract run IDs for each condition
     control_runs = exp_data[exp_data['condition'] == "control"]['run'].tolist()
     treatment_runs = exp_data[exp_data['condition'] == "treatment"]['run'].tolist()
 
-    # 각 run에 대한 파일 경로 설정
-    control_files = [os.path.join(results_dir, f"relabelled_{run}.tabular") for run in control_runs]
-    treatment_files = [os.path.join(results_dir, f"relabelled_{run}.tabular") for run in treatment_runs]
+    # Construct file paths (using Path objects for better compatibility)
+    control_files = [results_dir / f"relabelled_{run}.tabular" for run in control_runs]
+    treatment_files = [results_dir / f"relabelled_{run}.tabular" for run in treatment_runs]
 
     return control_files, treatment_files
 
 def save_r_script(control_files, treatment_files, output_file):
-    """ R 스크립트를 작성하여 logFC 및 p-value 계산 """
+    """Generate an R script to perform logFC and p-value calculations."""
+    r_script_path = script_dir / "deg_analysis.R"  # Ensure the R script is saved in the module directory
+
     r_script = f"""
     library(edgeR)
+
+    # Define file paths
     control_files <- c({', '.join([f'"{file}"' for file in control_files])})
     treatment_files <- c({', '.join([f'"{file}"' for file in treatment_files])})
 
+    # Function to read count files
     read_counts_file <- function(filepath) {{
-        df <- read.table(filepath, header = FALSE, sep = "\t", stringsAsFactors = FALSE)
+        df <- read.table(filepath, header = FALSE, sep = "\\t")
         colnames(df) <- c("geneID", "count")
         return(df)
     }}
 
+    # Read count data
     control_data <- lapply(control_files, read_counts_file)
     treatment_data <- lapply(treatment_files, read_counts_file)
 
-    control_counts <- Reduce(function(x, y) merge(x, y, by = "geneID", all = TRUE), control_data)
-    treatment_counts <- Reduce(function(x, y) merge(x, y, by = "geneID", all = TRUE), treatment_data)
+    # Merge all count data in a single step
+    all_counts <- Reduce(function(x, y) merge(x, y, by = "geneID", all = TRUE), c(control_data, treatment_data))
+    all_counts[is.na(all_counts)] <- 0  # Replace NA values with 0
 
-    control_counts[is.na(control_counts)] <- 0
-    treatment_counts[is.na(treatment_counts)] <- 0
-
-    all_counts <- merge(control_counts, treatment_counts, by = "geneID")
+    # Set row names and remove geneID column
     rownames(all_counts) <- all_counts$geneID
     all_counts <- all_counts[, -1]
 
+    # Define experimental groups
     group <- factor(c(rep("control", length(control_files)), rep("treatment", length(treatment_files))))
     dge <- DGEList(counts = all_counts, group = group)
     dge <- calcNormFactors(dge)
 
+    # Model fitting and differential expression analysis
     design <- model.matrix(~group)
     dge <- estimateDisp(dge, design)
     fit <- glmFit(dge, design)
     lrt <- glmLRT(fit)
 
-    deg_results <- topTags(lrt, n = nrow(dge))$table
-    write.table(deg_results[, c("logFC", "PValue")], file = "{output_file}", sep = "\t", row.names = TRUE, quote = FALSE)
+    # Save logFC and P-value results
+    deg_results <- topTags(lrt, n = Inf)$table  # `n = Inf` retrieves all results
+    write.table(deg_results[, c("logFC", "PValue")], file = "{output_file}", sep = "\\t", row.names = TRUE, quote = FALSE)
     """
 
-    with open("deg_analysis.R", "w") as f:
+    with r_script_path.open("w") as f:
         f.write(r_script)
 
 def run_deg_analysis():
-    """ 실험 별로 DEG 분석 수행 """
+    """Perform DEG analysis for each experiment."""
     metadata, experiments = load_metadata()
     for experiment in experiments:
-        safe_experiment = sanitize_filename(experiment)  # 특수문자 처리된 파일명
+        safe_experiment = sanitize_filename(experiment)
         try:
-            # 파일 분리 및 조건 확인
+            # Prepare experiment files
             control_files, treatment_files = prepare_experiment_files(metadata, experiment)
-            output_file = os.path.join(results_dir, f"DEG_results_{safe_experiment}.txt")
+            output_file = results_dir / f"DEG_results_{safe_experiment}.txt"
 
-            # R 스크립트 생성 및 실행
+            # Generate and execute the R script
             save_r_script(control_files, treatment_files, output_file)
-            subprocess.run(["Rscript", "deg_analysis.R"], check=True)
+            subprocess.run(["Rscript", str(script_dir / "deg_analysis.R")], check=True)
             print(f"DEG analysis for experiment {experiment} completed. Results saved to {output_file}")
         except Exception as e:
             error_message = f"Error in experiment {experiment}: {e}\n"
             print(error_message)
-            with open(error_log_path, "a") as log_file:
+            with error_log_path.open("a") as log_file:
                 log_file.write(error_message)
 
 if __name__ == "__main__":
     run_deg_analysis()
-
